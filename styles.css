@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "comic sans ms";
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    padding: 25px 0;
+}
+
+label {
+    font-size: large;
+}
+
+button {
+    background-color: aliceblue;
+    font-size: large;
+    font-weight: medium;
+    padding: 12px 14px;
+    border: 1.5px solid gray;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.author {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+#country {
+    font-size: large;
+}
+
+#capital {
+    font-size: large;
+}

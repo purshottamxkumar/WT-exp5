@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Box</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <center>
+            <h1>Select the Country name to find its Capital</h1>
+            <label for="country">Select A Country</label>
+            <select name="country" id="country" onchange="func()">
+                <option value="NEW DELHI">INDIA</option>
+                <option value="LONDON">UK</option>
+                <option value="CANBERRA">AUSTRALIA</option>
+                <option value="DHAKA">BANGLADESH</option>
+                <option value="KATHMANDU">NEPAL</option>
+            </select>
+            <br><br>
+            <label for="capital">Capital</label>
+            <input type="text" id="capital" value="NEW DELHI">
+        </center>
+    </div>
+    <a href="https://github.com/purshottamxkumar/WT-exp5" target="_blank"><button class="author">Fork On Github</button></a>
+    <script>
+        function func() {
+            let cnt = document.getElementById("country");
+            let cnt_value = cnt.value;
+            let cap = document.getElementById("capital");
+            cap.value = cnt.value;
+        }
+    </script>
+</body>
+</html>
